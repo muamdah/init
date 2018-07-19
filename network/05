@@ -1,0 +1,1 @@
+host -t soa slash16.org | cut -b28- | nslookup

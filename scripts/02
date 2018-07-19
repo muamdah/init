@@ -1,0 +1,4 @@
+echo "apt-get -y update >> /var/log/update_script.log && 
+apt-get -y upgrade >> /var/log/update_script.log" > /etc/cron.weekly/update.sh
+
+echo "0 4 * * 0 root etc/cron.weekly/update.sh" | crontab
